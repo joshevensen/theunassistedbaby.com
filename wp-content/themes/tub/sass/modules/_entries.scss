@@ -1,0 +1,53 @@
+.entry {
+	max-width: 1200px;
+	margin: 50px auto;
+
+	&:first-of-type {
+
+		@include bp(880) {
+			margin-top: 90px;
+		}
+
+		@include bp(560) {
+			margin-top: 120px;
+		}
+	}
+}
+
+.entry--title {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid $heather;
+	font-size: 24px;
+	color: $purpleDark;
+}
+
+.entry--content {
+	@include clearfix;
+	margin-bottom: 24px;
+	line-height: 1.75;
+}
+
+.entry--thumbnail {
+	float: left;
+	margin: 6px 20px 20px 0;
+
+	@include bp(420) {
+		float: none;
+		display: block;
+		margin: 6px auto 20px;
+	}
+}
+
+.entry--link {
+	display: inline-block;
+	float: right;
+	margin-top: 20px;
+	padding: 8px 20px;
+	border: 1px solid $purpleLight;
+	line-height: 1;
+
+	&:hover {
+		border-color: $teal;
+	}
+}

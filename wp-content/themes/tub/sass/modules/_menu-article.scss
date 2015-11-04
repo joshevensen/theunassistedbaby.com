@@ -1,0 +1,52 @@
+.article_menu {
+	padding: 10px 0;
+	border: 1px solid $white;
+	border-right: none;
+	border-left: none;
+
+	ul {
+		margin: 0;
+		list-style: none;
+	}
+
+	a {
+		display: block;
+		padding: 6px $p-panel;
+		@include link-colors($white, $white);
+
+		&:hover {
+			background-color: $purpleDark;
+		}
+	}
+
+	.children {
+		display: none;
+		background-color: lighten($purpleLight, 5%);
+		border: 1px solid lighten($purpleLight, 5%);
+		border-right: none;
+		border-left: none;
+
+		a {
+			padding-left: $p-panel + 28px;
+		}
+	}
+}
+
+.current_page_item {
+
+	> a {
+		background-color: lighten($purpleDark, 8%);
+	}
+
+
+	.children {
+		display: block;
+	}
+}
+
+.page_item_has_children.current_page_parent {
+
+	.children {
+		display: block;
+	}
+}

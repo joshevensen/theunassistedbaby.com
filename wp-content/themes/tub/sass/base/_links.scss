@@ -1,0 +1,8 @@
+a {
+  text-decoration: none;
+  @include link-colors($purpleDark, $teal, $purpleLight);
+}
+
+p a:hover {
+  text-decoration: underline;
+}

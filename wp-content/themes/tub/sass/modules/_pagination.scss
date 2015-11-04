@@ -1,0 +1,40 @@
+.pagination {
+	clear: both;
+	padding: 2px 0;
+	border-top: 1px solid $heather;
+	text-align: right;
+
+	.page-numbers {
+		display: inline-block;
+		min-width: 30px;
+		padding: 4px;
+		border: 1px solid $heather;
+		border-top: none;
+		border-bottom: none;
+		text-align: center;
+		line-height: 20px;
+
+		&:hover {
+			border-color: $teal;
+		}
+
+		&.next,
+		&.prev {
+			padding-right: 8px;
+			padding-left: 8px;
+			border: none;
+		}
+
+		&.current {
+			color: $heather;
+
+			&:hover {
+				border-color: $heather;
+			}
+		}
+	}
+}
+
+.screen-reader-text {
+	display: none;
+}

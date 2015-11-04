@@ -1,0 +1,18 @@
+.wpcf7-form {
+	width: 80%;
+	margin: 20px auto;
+
+	@include bp(700) {
+		width: 100%;
+	}
+}
+
+.wpcf7-submit {
+	background-color: $purpleLight;
+	font-size: 20px;
+	color: $white;
+
+	&:hover {
+		background-color: $purpleDark;
+	}
+}

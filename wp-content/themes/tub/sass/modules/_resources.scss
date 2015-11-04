@@ -1,0 +1,66 @@
+.resource_box {
+	float: left;
+	width: 48%;
+	margin-bottom: 50px;
+
+	&:nth-of-type(odd) {
+		clear: both;
+		margin-right: 2%;
+	}
+
+	&:nth-of-type(even) {
+		margin-left: 2%;
+	}
+
+	@include bp(880) {
+		float: none;
+		width: 100%;
+		margin: 50px 0 0!important;
+	}
+}
+
+.resource--title {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid $heather;
+	font-size: 24px;
+	color: $purpleDark;
+}
+
+.resource--content {
+	@include clearfix;
+	line-height: 1.75;
+}
+
+.resource--thumbnail {
+	float: left;
+	width: 200px;
+	margin-right: 14px;
+	margin-bottom: 10px;
+
+	@include bp(420) {
+		float: none;
+		display: block;
+		margin: 6px auto 20px;
+	}
+}
+
+.resource--links {
+	@include clearfix();
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid $heather;
+	text-align: center;
+}
+
+.resource--link {
+	display: inline-block;
+	margin: 0 10px 10px;
+	padding: 8px 20px;
+	border: 1px solid $purpleLight;
+	line-height: 1;
+
+	&:hover {
+		border-color: $teal;
+	}
+}

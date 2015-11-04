@@ -1,0 +1,76 @@
+.article {
+	max-width: 1200px;
+	margin: 0 auto;
+
+	@include bp(880) {
+		margin-top: -40px;
+	}
+
+	@include bp(560) {
+		margin-top: -70px;
+	}
+}
+
+.article--title {
+	padding: 20px 0;
+	border-bottom: 1px solid $purpleLight;
+	font-size: 30px;
+	color: $purpleDark;
+	text-align: center;
+}
+
+.article--content {
+	position: relative;
+	min-height: 400px;
+	margin: 20px 0 40px;
+
+	h1, h2, h3, h4, h5, h6 {
+		margin: 22px 0 12px;
+		color: $purpleDark;
+	}
+
+	p {
+		margin-bottom: 12px;
+		line-height: 1.75;
+	}
+
+	ul, ol {
+		margin-bottom: 12px;
+	}
+
+	li {
+		line-height: 1.75;
+	}
+}
+
+.article--footer {
+	@include clearfix;
+	padding: 10px 0;
+	border: 1px solid $heather;
+	border-right: none;
+	border-left: none;
+}
+
+.article--footer--prev {
+	float: left;
+
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+.article--footer--next {
+	float: right;
+
+	a:hover {
+		text-decoration: none;
+	}
+}
+
+
+
+.article--widget_bar {
+	min-height: 240px;
+	margin: 30px 0;
+	background-color: $purpleLight;
+}

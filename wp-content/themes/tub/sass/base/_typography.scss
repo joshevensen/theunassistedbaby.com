@@ -1,0 +1,35 @@
+body {
+  @include font-size();
+  font-family: $f-sans;
+  font-weight: 400;
+  line-height: 1;
+  color: $text;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: $heading;
+}
+h1 {
+  @include font-size(2);
+}
+h2 {
+  @include font-size(1.75);
+}
+h3 {
+  @include font-size(1.5);
+}
+h4 {
+  @include font-size(1.25);
+}
+h5 {
+  @include font-size(1.125);
+}
+h6, p {
+  @include font-size();
+}
+small {
+  font-size: 80%;
+}

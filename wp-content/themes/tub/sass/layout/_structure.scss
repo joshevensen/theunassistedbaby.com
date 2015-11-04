@@ -1,0 +1,51 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	padding-left: $w-panel;
+
+	@include bp(1100) {
+		padding-top: $h-header;
+		padding-left: 0;
+	}
+}
+
+.site_page {
+	padding: 30px 40px 0;
+
+	@include bp(600) {
+		padding: 20px 20px 0;
+	}
+}
+
+.site_content {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	background-color: $white;
+
+	&.resource_archive {
+		@include clearfix();
+		padding-top: 50px;
+	}
+}
+
+
+.edit_link {
+	position: fixed;
+	right: 0;
+	bottom: 10px;
+
+	a {
+		display: block;
+		padding: 4px 10px;
+		background-color: $purpleLight;
+		@include link-colors($white, $white);
+
+		&:hover {
+			background-color: $purpleDark;
+		}
+	}
+}

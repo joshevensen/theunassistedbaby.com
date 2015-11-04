@@ -1,0 +1,104 @@
+.site_header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 900;
+
+	&.tall {
+		width: $w-panel;
+		background-color: $purpleLight;
+
+		@include bp(1100) {
+			display: none;
+		}
+	}
+
+	&.wide {
+		display: none;
+		right: 0;
+		height: $h-header;
+		background-color: $purpleDark;
+
+		@include bp(1100) {
+			display: block;
+		}
+
+	}
+}
+
+.site_header--logo {
+	display: block;
+	height: $h-logo;
+	padding: 10px 0;
+	text-align: center;
+
+	img {
+		height: 100%;
+	}
+
+	@include bp(1100) {
+		float: left;
+		height: $h-header;
+		padding-left: 10px;
+	}
+}
+
+.site_header--button {
+	float: left;
+	height: $h-header;
+	width: $h-header;
+	background-color: transparent;
+	border: none;
+	font-size: 30px;
+	color: $white;
+	line-height: $h-header;
+
+	&:focus,
+	&:hover,
+	&.active {
+		outline: none;
+		background-color: $purpleLight;
+	}
+}
+
+
+
+.site_panel {
+	position: fixed;
+	top: $h-logo;
+	bottom: 0;
+	left: 0;
+	z-index: 800;
+	overflow-y: auto;
+	width: $w-panel;
+	background-color: $purpleLight;
+
+	@include bp(1100) {
+		top: $h-header;
+		left: -($w-panel + 20px);
+		box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.4);
+		transition: left $t-default;
+
+		&.open {
+			left: 0;
+		}
+	}
+}
+
+
+.site_panel--home_link {
+	display: block;
+	margin: 10px 0;
+	padding: 6px $p-panel;
+	@include link-colors($white, $white);
+
+	&:hover {
+		background-color: $purpleDark;
+	}
+
+	&.current {
+		background-color: lighten($purpleDark, 8%);
+	}
+}
+
+

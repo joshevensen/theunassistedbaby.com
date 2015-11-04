@@ -1,0 +1,20 @@
+.site_footer {
+	max-width: 1200px;
+	margin: 0 auto;
+	border-top: 1px solid $heather;
+}
+
+.site_footer--copyright {
+	padding: 20px 0 24px;
+	color: $grey;
+	text-align: center;
+
+	p {
+		font-size: 14px;
+		line-height: 1.2;
+	}
+
+	a {
+  		@include link-colors(inherit, $teal);
+	}
+}

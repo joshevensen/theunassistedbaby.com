@@ -1,0 +1,48 @@
+.article--content.parent {
+	padding-right: 240px;
+
+	@include bp(820) {
+		padding-right: 0;
+	}
+}
+
+.child_menu {
+	display: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 200px;
+	padding: 6px 14px;
+	border: 1px solid $pearl;
+
+	@include bp(820) {
+		position: static;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+.child_menu--list {
+	margin: 0!important;
+	list-style: none;
+
+	@include bp(820) {
+		@include clearfix();
+	}
+
+	li {
+		padding: 4px 0;
+		font-size: 14px;
+		line-height: 1.3;
+
+		@include bp(820) {
+			float: left;
+			width: 50%;
+		}
+
+		@include bp(600) {
+			float: none;
+			width: 100%;
+		}
+	}
+}

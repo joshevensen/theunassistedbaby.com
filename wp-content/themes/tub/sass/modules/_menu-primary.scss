@@ -1,0 +1,25 @@
+.primary_menu {
+	padding: 10px 0;
+
+	ul {
+		margin: 0;
+		list-style: none;
+	}
+
+	a {
+		display: block;
+		padding: 6px $p-panel;
+		@include link-colors($white, $white);
+
+		&:hover {
+			background-color: $purpleDark;
+		}
+	}
+
+	.children {
+
+		a {
+			padding-left: $p-panel + 16px;
+		}
+	}
+}

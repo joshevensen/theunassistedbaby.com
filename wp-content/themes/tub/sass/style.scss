@@ -1,0 +1,50 @@
+/*
+	Theme Name: 	The Unassisted Baby
+	Template: 		tub
+	Version: 		1.0.0
+	Text Domain: 	tub
+*/
+
+//
+// Utilities
+@import "utilities/colors";
+@import "utilities/variables";
+@import "utilities/mixins";
+
+//
+// Vendor
+@import "vendor/magnific-popup";
+
+//
+// Base
+@import "base/reset";
+@import "base/typography";
+@import "base/buttons";
+@import "base/links";
+@import "base/forms";
+@import "base/wordpress";
+
+//
+// Layout
+@import "layout/structure";
+@import "layout/panel";
+@import "layout/footer";
+
+//
+// Modules
+@import "modules/articles";
+@import "modules/child-menu";
+@import "modules/contact-form";
+@import "modules/entries";
+@import "modules/hero";
+@import "modules/home";
+@import "modules/menu-article";
+@import "modules/menu-primary";
+@import "modules/menu-social";
+@import "modules/no-content";
+@import "modules/page";
+@import "modules/pagination";
+@import "modules/posts";
+@import "modules/resources";
+@import "modules/search-form";
+@import "modules/widgets";

@@ -1,0 +1,30 @@
+.search_form {
+	position: relative;
+	margin: 10px 0;
+	padding: 0 $p-panel;
+}
+
+.search_form--field {
+	padding: 0 $h-searchField 0 6px;
+	border: none;
+	line-height: $h-searchField;
+}
+
+.search_form--button {
+	position: absolute;
+	top: 1px;
+	right: $p-panel + 1px;
+	height: $h-searchField - 2px;
+	width: $h-searchField - 2px;
+	background-color: $white;
+	border: none;
+	font-size: $h-searchField - 16px;
+	color: $purpleDark;
+	text-align: center;
+	line-height: $h-searchField - 2px;
+
+	&:hover {
+		background-color: $purpleDark;
+		color: $white;
+	}
+}

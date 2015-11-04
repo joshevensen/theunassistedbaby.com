@@ -1,0 +1,26 @@
+.not_found {
+	margin: 40px 0;
+
+	.search_form {
+		max-width: 400px;
+		margin-top: 30px;
+		padding: 0;
+	}
+
+	.search_form--field {
+		border: 1px solid $purpleLight;
+		line-height: 30px;
+	}
+	.search_form--button {
+		right: 1px;
+	}
+}
+
+.not_found--heading {
+	margin-bottom: 20px;
+	font-size: 28px;
+	color: $purpleDark;
+}
+
+.not_found--countent {
+}
